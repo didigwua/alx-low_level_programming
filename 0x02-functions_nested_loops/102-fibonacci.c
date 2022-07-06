@@ -1,46 +1,31 @@
 #include <stdio.h>
 
 /**
-  * main - Prints 3 combination of numbers
+  * main - Prints the first 52 fibonacci numbers
   *
-  * Return: Always (Success)
+  * Return: Nothing!
   */
 int main(void)
 {
-	int c, i, k, j;
+	int i = 0;
+	long j = 1, k = 2;
 
-	for (c = 48; c <= 57; c++)
+	while (i < 50)
 	{
-		for (i = 48; i <= 57; i++)
+		if (i == 0)
+			printf("%ld", j);
+		else if (i == 1)
+			printf(", %ld", k);
+		else
 		{
-			for (k = 48; k <= 57; k++)
-			{
-				for (j = 48; j <= 57; j++)
-				{
-					if (((k + j) > (c + i) &&  k >= c) || c < k)
-					{
-						putchar(c);
-						putchar(i);
-						putchar(' ');
-						putchar(k);
-						putchar(j);
-
-					if (c + i + k + j == 227 && c == 57)
-					{
-					break;
-					}
-					else
-					{
-					putchar(',');
-					putchar(' ');
-					}
-					}
-				}
-			}
+			k += j;
+			j = k - j;
+			printf(", %ld", k);
 		}
+
+		++i;
 	}
 
-	putchar('\n');
-
+	printf("\n");
 	return (0);
 }
