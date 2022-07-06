@@ -1,20 +1,23 @@
 #include "main.h"
 
 /**
-  * main - Prints the alphabet at reverse
+  * print_last_digit - Prints the last digit of a number
+  * @n: The number to be treated
   *
-  * Return: Always (Success)
+  * Return: Value of the last digit of number
   */
-int main(void)
+int print_last_digit(int n)
 {
-	char c;
+	int last;
 
-	for (c = 'z'; c >= 'a'; c--)
+	last = n % 10;
+
+	if (last < 0)
 	{
-		putchar(c);
+		last = last * -1;
 	}
 
-	putchar('\n');
+	_putchar(last + '0');
 
-	return (0);
+	return (last);
 }
