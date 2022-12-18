@@ -1,1 +1,1 @@
-This is task Dynamic libraries readme
+# 0x18. C - Dynamic libraries
