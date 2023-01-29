@@ -1,1 +1,1 @@
-Thic is task 0x1A-hash_tables README
+# 0x1A. C - Hash tables

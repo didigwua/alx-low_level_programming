@@ -1,20 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - Prints the numbers since 0 to 9
- *
- * Return: Always (Success)
+ * main - Entry point
+ * Return: 0
  */
+
 int main(void)
 {
-	char n;
+	int n_;
 
-	for (n = '0'; n <= '9'; n++)
-	{
-		putchar(n);
-	}
-
-	putchar('\n');
-
+		for (n_ = 0; n_ < 10; n_++)
+			printf("%i", n_);
+	putchar ('\n');
 	return (0);
 }

@@ -1,29 +1,26 @@
 #include "main.h"
 
 /**
-  * print_square - Prints n squares according n number of times
-  * @size: The number of squares/number of times
-  *
-  * Return: empty
-  */
+ * print_square - Prints a square, followed by a new line
+ * @size: The sqaure's size
+ */
+
 void print_square(int size)
 {
-	int x, y;
+	int hgt, wid;
 
-	if (size <= 0)
+	if (size > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (x = 0; x < size; x++)
+		for (hgt = 0; hgt < size; hgt++)
 		{
-			for (y = 0; y < size; y++)
-			{
-				_putchar(35);
-			}
+			for (wid = 0; wid < size; wid++)
+				_putchar('#');
 
+			if (hgt == size - 1)
+				continue;
 			_putchar('\n');
 		}
 	}
+
+	_putchar('\n');
 }

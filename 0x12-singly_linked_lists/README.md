@@ -1,1 +1,2 @@
-This is task 0x12-singly_linked_lists README
+0x12. C - Singly linked lists: 
+5 mandatory tasks and 2 advanced tasks

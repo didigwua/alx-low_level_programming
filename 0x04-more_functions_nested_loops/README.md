@@ -1,1 +1,1 @@
-This is a 0x04-more_functions_nested_loops readme 
+0x04 - More functions: more nested loops 10 mandatory tasks and 2 advance tasks

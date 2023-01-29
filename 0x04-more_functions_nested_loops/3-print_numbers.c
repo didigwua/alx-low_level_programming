@@ -1,18 +1,21 @@
 #include "main.h"
 
 /**
-  * print_numbers - Print the numbers since 0 up to 9
-  *
-  * Return: The numbers since 0 up to 9
-  */
+ * print_numbers - A script that prints numbers from 0-9, and a new line
+ *
+ * Return: 0
+ */
+
 void print_numbers(void)
 {
-	int x;
+	int i;
 
-	for (x = 0; x <= 9; x++)
+	i = 48;
+
+	while (i <= 57)
 	{
-		_putchar(x + '0');
+		_putchar (i);
+		i++;
 	}
-
-	_putchar('\n');
+	_putchar ('\n');
 }

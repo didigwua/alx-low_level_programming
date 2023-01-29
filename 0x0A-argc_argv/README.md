@@ -1,1 +1,1 @@
-This is project alx-low_level_programming with directory 0x0A-argc_argv
+0x0A. C - argc_argv

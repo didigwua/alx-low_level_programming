@@ -1,12 +1,14 @@
+/* A program that prints the name of the it was compiled with */
 #include <stdio.h>
 
 /**
-  * main - Prints the file name of the program
-  *
-  * Return: Always zero
-  */
+ * main - Entry point of the program
+ *
+ * Return: 0
+ */
 int main(void)
 {
 	printf("%s\n", __FILE__);
+
 	return (0);
 }

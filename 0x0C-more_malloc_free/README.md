@@ -1,1 +1,3 @@
-This is task 0x0C-more_malloc_free readme
+0x0C - More malloc, free
+
+Learning to do more with malloc and free

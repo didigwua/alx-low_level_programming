@@ -2,35 +2,31 @@
 #include <stdlib.h>
 
 /**
-  * _strdup - Duplicate a string
-  * @str: the string to duplicate
-  *
-  * Return: the string duplicated
-  */
+ * _strdup - Returns a pointer to the duplicate (second copy) of a new string.
+ * @str: The string with the duplicate
+ * Return: Returns NULL if str is NULL or if there's insufficient memory
+ * Else - a pointer to the duplicated string is returned.
+ */
+
 char *_strdup(char *str)
 {
-	int a = 0, i = 1;
-	char *s;
+	char *second_copy;
+	int x, length = 0;
 
 	if (str == NULL)
 		return (NULL);
 
-	while (str[i])
-	{
-		i++;
-	}
+	for (x = 0; str[x]; x++)
+		length++;
 
-	s = malloc((sizeof(char) * i) + 1);
+	second_copy = malloc(sizeof(char) * (length + 1));
 
-	if (s == NULL)
+	if (second_copy == NULL)
 		return (NULL);
 
-	while (a < i)
-	{
-		s[a] = str[a];
-		a++;
-	}
+	for (x = 0; str[x]; x++)
+		second_copy[x] = str[x];
+	second_copy[length] = '\0';
 
-	s[a] = '\0';
-	return (s);
+	return (second_copy);
 }

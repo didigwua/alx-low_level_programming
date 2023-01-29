@@ -1,23 +1,24 @@
 #include <stdio.h>
 
 /**
- * main - Prints some letters of alphabet
- *
- * Return: Always (Success)
+ * main - Entry point of the program
+ * A program that prints the English alphabet in lowercase,
+ * followed by a new \n
+ * Return: 0
  */
+
 int main(void)
 {
-	char c;
+	char x;
 
-	for (c = 'a'; c <= 'z'; c++)
+	for (x = 'a'; x <= 'z'; x++)
 	{
-		if (c != 'e' && c != 'q')
+		if (x == 'e' || x == 'q')
 		{
-			putchar(c);
+			continue;
 		}
+		putchar (x);
 	}
-
-	putchar('\n');
-
+	putchar ('\n');
 	return (0);
 }

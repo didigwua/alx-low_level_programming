@@ -1,1 +1,1 @@
-This is task 0-main.c readme
+My first project in a bid to learn debugging by doing, just four tasks, 0 - 4

@@ -1,4 +1,3 @@
-#ifndef _MAIN_
-#define _MAIN_
+#ifndef SIZE
 #define SIZE 1024
 #endif

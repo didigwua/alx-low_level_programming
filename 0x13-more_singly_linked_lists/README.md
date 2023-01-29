@@ -1,1 +1,1 @@
-This is task 0x13-more_singly_linked_lists README
+0x13. C - More Singly linked lists: 11 mandatory tasks and 4 advanced tasks
